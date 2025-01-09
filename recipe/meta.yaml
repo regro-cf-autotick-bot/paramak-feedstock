@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,7 +24,6 @@ requirements:
   run:
     - python >={{ python_min }}
     - cadquery >=2.5.2
-    - ezdxf >=1.3.0
     - numpy
     - mpmath
     - sympy
